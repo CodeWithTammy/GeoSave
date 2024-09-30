@@ -82,7 +82,7 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyDGmg_iSFbZeFR7WSF7orouGC1xzXjMZ0U" />
+            android:value="APIKEY" />
         <!--
      Set custom default icon. This is used when no icon is set for incoming notification messages.
      See README(https://goo.gl/l4GJaQ) for more.
