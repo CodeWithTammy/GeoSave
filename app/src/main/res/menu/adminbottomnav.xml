@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Home"
+        android:id="@+id/adminhome"
+        android:icon="@drawable/home_fill0_wght300_grad0_opsz24"/>
+
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Profile"
+        android:id="@+id/adminprofile"
+        android:icon="@drawable/person_fill0_wght300_grad0_opsz24__1_"/>
+</menu>

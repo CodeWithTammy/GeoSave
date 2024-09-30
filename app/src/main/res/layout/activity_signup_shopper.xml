@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpScreen.SignupStore"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/header"
+            android:src="@drawable/wave"
+            android:scaleType="centerCrop"
+            android:layout_alignParentStart="true">
+        </ImageView>
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:id="@+id/logo"
+            android:src="@drawable/geosavelogo"
+            android:scaleType="centerCrop"
+            android:layout_below="@+id/header"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-90dp">
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/signUpTextshopper"
+            android:text="Sign Up"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_below="@id/logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="30dp">
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fieldsLinearLayout"
+            android:layout_below="@+id/signUpTextshopper"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:hint="Email"
+                android:drawableStart="@drawable/person"
+                android:drawablePadding="8dp"
+                android:paddingLeft="25dp"
+                android:background="@drawable/formbackground"
+                android:inputType="textEmailAddress"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="27dp"/>
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Password"
+                android:drawableStart="@drawable/password"
+                android:paddingStart="25dp"
+                android:background="@drawable/formbackground"
+                android:ems="10"
+                android:drawablePadding="8dp"
+                android:inputType="textPassword"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="27dp"/>
+            <EditText
+                android:id="@+id/confirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Confirm password"
+                android:drawableLeft="@drawable/password"
+                android:paddingLeft="25dp"
+                android:background="@drawable/formbackground"
+                android:ems="10"
+                android:drawablePadding="8dp"
+                android:inputType="textPassword"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="27dp"/>
+
+        </LinearLayout>
+
+
+        <CheckBox
+            android:id="@+id/rememberme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fieldsLinearLayout"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="-30dp"
+            android:text="Remember me" />
+
+        <CheckBox
+            android:id="@+id/termsandcondition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rememberme"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="-10dp"
+            android:text="I agree to GeoSave"/>
+
+        <TextView
+            android:id="@+id/termstxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rememberme"
+            android:layout_alignRight="@+id/termsandcondition"
+            android:layout_marginStart="187dp"
+            android:layout_marginTop="5dp"
+            android:text="Terms and Conditions."
+            android:textColor="@color/lightblue"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/signupbtn"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/termsandcondition"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:background="@drawable/corner"
+            android:text="Sign Up"
+            android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/questionlogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Have an account?"
+            android:layout_below="@+id/signupbtn"
+            android:layout_marginLeft="100dp"
+            android:paddingBottom="40dp"
+
+            />
+        <TextView
+            android:id="@+id/logintxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/signupbtn"
+            android:text=" Login Here"
+            android:layout_marginLeft="210dp"
+            android:textStyle="bold"
+            android:textColor="@color/lightblue"
+            android:paddingBottom="40dp"/>
+        <ImageView
+            android:id="@+id/backbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_arrow_back_ios_24"
+            android:padding="25dp"/>
+
+    </RelativeLayout>
+</ScrollView>

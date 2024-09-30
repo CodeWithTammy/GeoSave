@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/darkblue"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30sp"
+        app:cardCornerRadius="12dp"
+        android:layout_marginBottom="60dp">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Terms and Condition for GeoSave"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="30dp"/>
+        <TextView
+            android:id="@+id/term1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. Acceptance of Terms:\n\nBy downloading, installing, or using the Geo Save App, you agree to comply with and be bound by these Terms and Conditions. If you do not agree with any part of these terms, you may not use the App."
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:gravity="left"
+            android:layout_marginTop="65sp"/>
+        <TextView
+            android:id="@+id/term2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2. Use of the App:\n\nThe Geo Save App is designed to help users discover deals and coupons based on their location through the use of geofences. Users are responsible for their own use of the App and must comply with all applicable laws and regulations."
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:gravity="left"
+            android:layout_below="@+id/term1"
+            android:layout_marginTop="15sp"/>
+            <TextView
+                android:id="@+id/term3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3. Privacy and Location Data:\n\nThe App may collect and use location data to provide relevant deals and coupons. By using the App, you consent to the collection, storage, and use of your location data in accordance with our Privacy Policy. It is your responsibility to review and understand the Privacy Policy."
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:gravity="left"
+                android:layout_below="@+id/term2"
+                android:layout_marginTop="15sp"/>
+            <TextView
+                android:id="@+id/term4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:text="4. Account Registration:\n\nTo access certain features of the App, you may be required to register for an account. You agree to provide accurate, current, and complete information during the registration process and to update such information to keep it accurate, current, and complete."
+                android:textSize="15sp"
+                android:gravity="left"
+                android:layout_below="@+id/term3"
+                android:layout_marginTop="15sp"/>
+            <TextView
+                android:id="@+id/term5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:text="5. Deal and Coupon Accuracy:\n\nWhile we strive to provide accurate and up-to-date information, we do not guarantee the accuracy of deals and coupons displayed in the App. Users are responsible for verifying the details and conditions of any deal or coupon before making a purchase."
+                android:textSize="15sp"
+                android:gravity="left"
+                android:layout_below="@+id/term4"
+                android:layout_marginTop="15sp"/>
+            <TextView
+                android:id="@+id/term6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:text="6. User Conduct:\n\nUsers agree not to use the App for any unlawful or prohibited purpose. This includes, but is not limited to, violating any applicable laws, regulations, or third-party rights."
+                android:textSize="15sp"
+                android:gravity="left"
+                android:layout_below="@+id/term5"
+                android:layout_marginTop="15sp"/>
+            <TextView
+                android:id="@+id/term7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:text="7. Termination:\n\nWe reserve the right to terminate or suspend your access to the App at any time, without notice, for any reason, including if you violate these Terms and Conditions."
+                android:textSize="15sp"
+                android:gravity="left"
+                android:layout_below="@+id/term6"
+                android:layout_marginTop="15sp"/>
+            <TextView
+                android:id="@+id/term8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:text="8. Modifications to Terms:\n\nWe may update or modify these Terms and Conditions at any time. Continued use of the App after such modifications will constitute your acknowledgment and acceptance of the updated terms."
+                android:textSize="15sp"
+                android:gravity="left"
+                android:layout_below="@+id/term7"
+                android:layout_marginTop="15sp"/>
+            <TextView
+                android:id="@+id/term9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:text="9. Disclaimer of Warranties:\n\nThe App is provided as is without any warranties, expressed or implied. We do not warrant the accuracy, completeness, or reliability of the App or its content."
+                android:textSize="15sp"
+                android:gravity="left"
+                android:layout_below="@+id/term8"
+                android:layout_marginTop="15sp"/>
+            <TextView
+                android:id="@+id/term10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:text="10. Limitation of Liability:\n\nIn no event shall we be liable for any direct, indirect, incidental, consequential, or special damages arising out of or in any way connected with the use of the App."
+                android:textSize="15sp"
+                android:gravity="left"
+                android:layout_below="@+id/term9"
+                android:layout_marginTop="15sp"/>
+            <TextView
+                android:id="@+id/term11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:text="11. Governing Law:\n\nThese Terms and Conditions are governed by and construed in accordance with the laws of [Your Jurisdiction]."
+                android:textSize="15sp"
+                android:gravity="left"
+                android:layout_below="@+id/term10"
+                android:layout_marginTop="15sp"/>
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:text="By using the Geo Save App, you agree to these terms and conditions. If you do not agree, please discontinue use of the App."
+                android:textSize="15sp"
+                android:gravity="left"
+                android:layout_below="@+id/term11"
+                android:layout_marginTop="15sp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/closedialog"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text1"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/logoutbtn"
+                android:gravity="center"
+                android:text="Close"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="50dp"
+                android:textColor="#FFFFFF" />
+
+        </RelativeLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

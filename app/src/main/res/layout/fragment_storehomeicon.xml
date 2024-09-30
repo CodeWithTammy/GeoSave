@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/layout1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/darkblue">
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/darkblue"
+                    android:minHeight="?attr/actionBarSize"
+                    android:theme="?attr/actionBarTheme"
+                    tools:layout_editor_absoluteX="1dp"
+                    tools:layout_editor_absoluteY="-3dp" />
+
+                <TextView
+                    android:id="@+id/addmarketing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/inter_bold"
+                    android:text="GeoSave"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="73dp"
+                    android:fontFamily="@font/inter"
+                    android:textColor="#FFFFFF"
+                    android:text="User Not Found"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="120dp"
+                    android:fontFamily="@font/inter"
+                    android:text="Start geo marketing \nyour business"
+                    android:textColor="@color/grey"
+                    android:textSize="15sp"
+                    android:textStyle="italic" />
+
+                <ImageView
+                    android:id="@+id/picture"
+                    android:layout_width="220dp"
+                    android:layout_height="150dp"
+                    app:srcCompat="@drawable/signupstorebg"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="50dp"/>
+                <RelativeLayout
+                    android:id="@+id/roundcard"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:layout_marginTop="200dp"
+                    android:background="@drawable/card">
+<RelativeLayout
+    android:id="@+id/buttonlayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true">
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/geofencebtn"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="50dp"
+                        android:background="@drawable/corner"
+                        android:fontFamily="@font/inter"
+                        android:text="Turn on geofence"
+                        android:textAllCaps="false"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/geofenceoffbtn"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="50dp"
+                        android:background="@drawable/logoutbtn"
+                        android:fontFamily="@font/inter"
+                        android:text="Turn off geofence"
+                        android:textAllCaps="false"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+</RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/geofencetxt"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/buttonlayout"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/inter_bold"
+                        android:text="Your geofence radius is 200 meters when turned on"
+                        android:textAlignment="center"
+                        android:textColor="@color/lightgrey"
+                        android:textSize="12sp" />
+
+                    <View
+                        android:id="@+id/line1"
+                        android:layout_width="110dp"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/geofencetxt"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="30dp"
+                        android:background="#BEB8B8" />
+
+                    <TextView
+                        android:id="@+id/recenttxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/geofencetxt"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/inter_bold"
+                        android:text="Recent Posts"
+                        android:textColor="@color/darkblue"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:id="@+id/line2"
+                        android:layout_width="110dp"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/geofencetxt"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginEnd="30dp"
+                        android:background="#BEB8B8" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/notfound"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                app:srcCompat="@drawable/noresultsfound" />
+
+            <TextView
+                android:id="@+id/no_recent_post"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:text="Oops...No recent posts"
+                android:textColor="@color/grey"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/dealsRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="50dp"
+                android:background="@color/white"
+                android:nestedScrollingEnabled="false"
+                android:visibility="visible" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

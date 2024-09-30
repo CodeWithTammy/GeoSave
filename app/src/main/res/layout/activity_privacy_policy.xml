@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PrivacyPolicy">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="30dp"
+                    android:layout_margin="15dp">
+
+                    <ImageView
+                        android:id="@+id/backbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="30dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/baseline_arrow_back_ios_24" />
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Privacy Policy "
+                        android:textColor="@color/darkblue"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_marginTop="30dp"/>
+
+                    <TextView
+                        android:id="@+id/date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Effective Date: March 1,2024"
+                        android:textColor="@color/grey"
+                        android:layout_below="@id/title"
+                        android:textSize="13sp"
+                        android:gravity="left"
+                        android:layout_marginTop="30dp"/>
+                    <TextView
+                        android:id="@+id/term1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="
+This Privacy Policy describes how GeoSave collects, uses, and discloses information when you use the GeoSave mobile application."
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:gravity="left"
+                        android:layout_below="@id/date"
+                        android:layout_marginTop="15sp"/>
+
+                    <TextView
+                        android:id="@+id/term2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/term1"
+                        android:layout_marginTop="15sp"
+                        android:gravity="left"
+                        android:text="Information Collection and Use"
+                        android:textColor="@color/darkblue"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/term3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="We do not collect any personally identifiable information about you when you use the App. However, the App may collect certain non-personally identifiable information automatically, including:\n\n
+Location Information: The App may access your device's precise location information to provide location-based services, such as geofencing and location tracking. This information is used solely within the App and is not shared with third parties."
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:gravity="left"
+                        android:layout_below="@+id/term2"
+                        android:layout_marginTop="15sp"/>
+
+                    <TextView
+                        android:id="@+id/term4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/term3"
+                        android:layout_marginTop="15sp"
+                        android:gravity="left"
+                        android:text="Use of Information"
+                        android:textColor="@color/darkblue"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/term5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:text="Any information collected by the App is used solely to provide and improve the App's features and functionality. We do not sell, rent, or share any information collected by the App with third parties for marketing or advertising purposes."
+                        android:textSize="15sp"
+                        android:gravity="left"
+                        android:layout_below="@+id/term4"
+                        android:layout_marginTop="15sp"/>
+
+                    <TextView
+                        android:id="@+id/term6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/term5"
+                        android:layout_marginTop="15sp"
+                        android:gravity="left"
+                        android:text="Data Security"
+                        android:textColor="@color/darkblue"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/term7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:text="We take reasonable measures to protect the information collected by the App from unauthorized access, disclosure, alteration, or destruction. However, please be aware that no method of transmission over the internet or electronic storage is 100% secure, and we cannot guarantee the absolute security of your information."
+                        android:textSize="15sp"
+                        android:gravity="left"
+                        android:layout_below="@+id/term6"
+                        android:layout_marginTop="15sp"/>
+
+                    <TextView
+                        android:id="@+id/term8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/term7"
+                        android:layout_marginTop="15sp"
+                        android:gravity="left"
+
+                        android:text="Children's Privacy"
+                        android:textColor="@color/darkblue"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/term9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:text="The App is not intended for use by children under the age of 13. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe that your child has provided us with personal information, please contact us so that we can delete the information.
+Changes to this Privacy Policy
+We may update this Privacy Policy from time to time. You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page."
+                        android:textSize="15sp"
+                        android:gravity="left"
+                        android:layout_below="@+id/term8"
+                        android:layout_marginTop="15sp"/>
+
+                    <TextView
+                        android:id="@+id/term10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/term9"
+                        android:layout_marginTop="15sp"
+                        android:gravity="left"
+                        android:text="Contact Us"
+                        android:textColor="@color/darkblue"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/term11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:text="If you have any questions or concerns about this Privacy Policy, please contact us at geosave@gmail.com."
+                        android:textSize="15sp"
+                        android:gravity="left"
+                        android:layout_marginBottom="70dp"
+                        android:layout_below="@+id/term10"
+                        android:layout_marginTop="15sp"/>
+
+
+
+
+                </RelativeLayout>
+            </ScrollView>
+
+
+</LinearLayout>
+

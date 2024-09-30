@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "939681554770",
+    "project_id": "geosaveapp",
+    "storage_bucket": "geosaveapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:939681554770:android:92fa032c1ac92fcfbeda8b",
+        "android_client_info": {
+          "package_name": "com.example.geosaveapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-EoVFljHmgU_GVH5DE55oS9d2JLQy0vk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

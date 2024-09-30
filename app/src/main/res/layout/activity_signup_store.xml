@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpScreen.SignupStore"
+    android:background="@color/white">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/layout1">
+       <ImageView
+           android:id="@+id/backbtn"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/baseline_arrow_back_ios_24"
+           android:padding="25dp"/>
+
+      <ImageView
+          android:layout_width="200dp"
+          android:layout_height="200dp"
+          android:id="@+id/header"
+          android:layout_centerHorizontal="true"
+          android:src="@drawable/signupbg"
+          android:scaleType="centerCrop">
+      </ImageView>
+   </RelativeLayout>
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true"
+           android:layout_below="@+id/layout1"
+           android:background="@drawable/cornerprofile">
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/signUpTextshopper"
+          android:text="Sign Up"
+          android:textSize="25sp"
+          android:textColor="@color/white"
+          android:textStyle="bold"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="10dp">
+      </TextView>
+           <TextView
+               android:id="@+id/textsentence"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@id/signUpTextshopper"
+               android:text="Create an account in seconds!"
+               android:textSize="16sp"
+               android:textColor="@color/white"
+               android:layout_centerHorizontal="true"
+               android:layout_marginBottom="30dp">
+           </TextView>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="370dp"
+          android:id="@+id/fieldsLinearLayout"
+          android:layout_below="@+id/textsentence"
+          android:orientation="vertical"
+          android:layout_marginBottom="30dp">
+
+
+          <com.google.android.material.textfield.TextInputLayout
+              android:id="@+id/Textlayout1"
+              android:layout_width="350dp"
+              android:layout_gravity="center"
+              android:background="#688B8B92"
+              android:layout_height="wrap_content"
+              app:hintTextColor="@color/white"
+              android:textColorHint="@color/white"
+              style="@style/NoUnderlineTextInputLayout">
+
+              <EditText
+                  android:id="@+id/storeName"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@drawable/textboxinput"
+                  android:backgroundTint="#688B8B92"
+                  android:ems="10"
+                  android:hint="Store Name/Username"
+                  android:inputType="text"
+                  android:paddingLeft="20dp"
+                  android:textColor="#FFFFFF"
+                  android:textColorHint="@color/white"
+                  android:layout_marginBottom="15dp"/>
+          </com.google.android.material.textfield.TextInputLayout>
+
+          <com.google.android.material.textfield.TextInputLayout
+              android:id="@+id/Textlayout2"
+              android:layout_width="350dp"
+              android:layout_gravity="center"
+              android:background="#688B8B92"
+              android:layout_height="wrap_content"
+              app:hintTextColor="@color/white"
+              android:textColorHint="@color/white"
+              style="@style/NoUnderlineTextInputLayout">
+
+              <EditText
+                  android:id="@+id/email"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@drawable/textboxinput"
+                  android:backgroundTint="#688B8B92"
+                  android:ems="10"
+                  android:hint="Email"
+                  android:inputType="textEmailAddress"
+                  android:paddingLeft="20dp"
+                  android:textColor="#FFFFFF"
+                  android:textColorHint="@color/white"
+                  android:layout_marginBottom="15dp"/>
+          </com.google.android.material.textfield.TextInputLayout>
+
+          <com.google.android.material.textfield.TextInputLayout
+              android:id="@+id/Textlayout3"
+              android:layout_width="350dp"
+              android:layout_gravity="center"
+              android:background="#688B8B92"
+              android:layout_height="wrap_content"
+              app:hintTextColor="@color/white"
+              app:passwordToggleEnabled="true"
+              app:passwordToggleTint="@color/white"
+              android:textColorHint="@color/white"
+              style="@style/NoUnderlineTextInputLayout">
+
+              <EditText
+                  android:id="@+id/password"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@drawable/textboxinput"
+                  android:backgroundTint="#688B8B92"
+                  android:ems="10"
+                  android:hint="Password"
+                  android:inputType="textPassword"
+                  android:paddingLeft="20dp"
+                  android:textColor="#FFFFFF"
+                  android:textColorHint="@color/white"
+                  android:layout_marginBottom="15dp"/>
+          </com.google.android.material.textfield.TextInputLayout>
+
+          <com.google.android.material.textfield.TextInputLayout
+              android:id="@+id/Textlayout4"
+              android:layout_width="350dp"
+              android:layout_gravity="center"
+              android:background="#688B8B92"
+              android:layout_height="wrap_content"
+              app:hintTextColor="@color/white"
+              android:textColorHint="@color/white"
+              app:passwordToggleEnabled="true"
+              app:passwordToggleTint="@color/white"
+              style="@style/NoUnderlineTextInputLayout">
+
+              <EditText
+                  android:id="@+id/confirmPassword"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@drawable/textboxinput"
+                  android:backgroundTint="#688B8B92"
+                  android:ems="10"
+                  android:hint="Confirm Password"
+                  android:inputType="textEmailAddress"
+                  android:paddingLeft="20dp"
+                  android:textColor="#FFFFFF"
+                  android:textColorHint="@color/white"
+                  android:layout_marginBottom="15dp"/>
+          </com.google.android.material.textfield.TextInputLayout>
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginLeft="30dp"
+    android:layout_marginTop="20dp">
+
+    <CheckBox
+        android:id="@+id/storecheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register as store"
+        android:textColor="#FFFFFF" />
+
+    <CheckBox
+        android:id="@+id/shoppercheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:text="Register as shopper"
+        android:textColor="#FFFFFF" />
+</LinearLayout>
+
+      </LinearLayout>
+
+
+           <CheckBox
+               android:id="@+id/rememberme"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@id/fieldsLinearLayout"
+               android:layout_marginStart="30dp"
+               android:layout_marginTop="-30dp"
+               android:text="Remember me"
+               android:textColor="#FFFFFF" />
+
+           <CheckBox
+               android:id="@+id/termsandcondition"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/rememberme"
+               android:layout_marginStart="30dp"
+               android:layout_marginTop="-10dp"
+               android:text="I agree to GeoSave"
+               android:textColor="#FFFFFF" />
+
+      <TextView
+          android:id="@+id/termstxt"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/rememberme"
+          android:layout_alignRight="@+id/termsandcondition"
+          android:layout_marginStart="187dp"
+          android:layout_marginTop="5dp"
+          android:text="Terms and Conditions."
+          android:textColor="@color/lightblue"
+          android:textStyle="bold" />
+
+      <androidx.appcompat.widget.AppCompatButton
+          android:id="@+id/signupbtn"
+          android:layout_width="200dp"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/termsandcondition"
+          android:layout_centerHorizontal="true"
+          android:layout_marginStart="20dp"
+          android:layout_marginTop="20dp"
+          android:layout_marginEnd="20dp"
+          android:layout_marginBottom="20dp"
+          android:background="@drawable/logoutbtn"
+          android:text="Sign Up"
+          android:textColor="@color/white" />
+
+           <TextView
+               android:id="@+id/questionlogin"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/signupbtn"
+               android:layout_marginLeft="100dp"
+               android:paddingBottom="40dp"
+               android:text="Have an account?"
+
+               android:textColor="#FFFFFF" />
+      <TextView
+          android:id="@+id/logintxt"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/signupbtn"
+          android:text=" Login Here"
+          android:layout_marginLeft="210dp"
+          android:textStyle="bold"
+          android:textColor="@color/lightblue"
+          android:paddingBottom="40dp"/>
+
+       </RelativeLayout>
+
+</RelativeLayout>
+</ScrollView>

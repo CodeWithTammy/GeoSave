@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StoreScreen.ViewStoreLocation"
+    android:id="@+id/Relativelayout"
+    android:background="@color/darkblue">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_bold"
+        android:text="View my location"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:layout_alignParentBottom="true">
+    </FrameLayout>
+
+
+
+    <!--        <androidx.fragment.app.FragmentContainerView-->
+<!--            android:id="@+id/map"-->
+<!--            android:name="com.google.android.gms.maps.SupportMapFragment"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="600dp"-->
+<!--            android:layout_alignParentBottom="true" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/address"-->
+<!--            android:layout_width="322dp"-->
+<!--            android:layout_height="56dp"-->
+<!--            android:ems="10"-->
+<!--            android:hint="address"-->
+<!--            android:layout_below="@+id/map"-->
+<!--            android:inputType="textPostalAddress"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+
+<!--        <Button-->
+<!--            android:id="@+id/enteraddress"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_below="@+id/address"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:text="Enter"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/address" />-->
+
+</RelativeLayout>

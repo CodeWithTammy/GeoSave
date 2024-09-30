@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UtilityScreens.EditProfile">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <!-- Profile TextView -->
+    <TextView
+        android:id="@+id/profiletxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/inter_bold"
+        android:text="Edit Profile"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <!-- Profile Picture ImageView -->
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageViewProfile"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/profiletxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/defaultpfp"
+        android:visibility="visible"
+        app:shapeAppearanceOverlay="@style/circular" />
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imageconstruction"-->
+<!--        android:layout_width="200dp"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="50dp"-->
+<!--        android:visibility="gone"-->
+<!--        app:srcCompat="@drawable/editpic" />-->
+
+<!--     Floating Action Button (Camera) -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/imagefloatingbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/imageViewProfile"
+        android:layout_alignBottom="@id/imageViewProfile"
+        android:layout_marginBottom="-15dp"
+        android:backgroundTint="@color/darkblue"
+        android:clickable="true"
+        android:elevation="12dp"
+        android:focusable="true"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.Circular"
+        app:srcCompat="@drawable/outline_camera_alt_24"
+        app:tint="@color/white" />
+
+    <!-- Back Button -->
+<!--    <TextView-->
+<!--        android:id="@+id/construction"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/imageviewprofile"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:text="Oops..This page is still under construction"-->
+<!--        android:textSize="18sp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:visibility="gone"-->
+<!--        tools:ignore="UnknownId" />-->
+
+    <ImageButton
+        android:id="@+id/backbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/baseline_arrow_back_ios_24" />
+
+    <!-- Name EditText -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout1"
+        android:layout_width="350dp"
+        android:layout_centerHorizontal="true"
+        style="@style/NoUnderlineTextInputLayout"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/imageViewProfile"
+        android:layout_height="70dp">
+
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/formbackground"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="UserName" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout2"
+        android:layout_width="350dp"
+        android:layout_centerHorizontal="true"
+        style="@style/NoUnderlineTextInputLayout"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/layout1"
+        android:layout_height="70dp">
+
+    <!-- Phone EditText -->
+    <EditText
+        android:id="@+id/editTextPhone2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_below="@+id/layout1"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/formbackground"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Email" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout3"
+        android:layout_width="350dp"
+        android:layout_centerHorizontal="true"
+        style="@style/NoUnderlineTextInputLayout"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/layout2"
+        android:layout_height="120dp">
+
+        <EditText
+            android:id="@+id/editTextAddress"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:ems="10"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_below="@id/editTextPhone2"
+            android:background="@drawable/formbackground"
+            android:inputType="textMultiLine|textPostalAddress"
+            android:gravity="top|start"
+            android:hint="Address"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/updateButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:layout_marginTop="40dp"
+        android:textAllCaps="false"
+        android:layout_below="@id/layout3"
+        android:textColor="@color/white"
+        android:background="@drawable/button_background"
+        android:layout_centerHorizontal="true"/>
+
+
+
+
+    <!-- Upload Button -->
+    <!-- Add your Upload Button code here -->
+
+    <!-- Next Button -->
+    <!-- Add your Next Button code here -->
+    </RelativeLayout>
+</ScrollView>

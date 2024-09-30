@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Components.storeaddicon"
+    android:background="@color/white">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/darkblue"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="-3dp" />
+            <TextView
+                android:id="@+id/addmarketing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/inter_bold"
+                android:text="Add your marketing"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+
+            <ImageView
+                android:id="@+id/nodeals"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="200dp"
+                android:src="@drawable/nodeals"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/nodealstxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nodeals"
+                android:layout_centerHorizontal="true"
+                android:text="No deals added :(..."
+                android:textColor="@color/grey"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/addmarketingrecyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/addmarketing"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="200dp"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </ScrollView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:id="@+id/fab"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="@color/white"
+        android:clickable="true"
+        android:elevation="5dp"
+        android:focusable="true"
+        app:fabCustomSize="70dp"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.Circular"
+        app:srcCompat="@drawable/shoppingbagplus"
+        app:tint="@color/darkblue"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="650dp"
+        />
+    </RelativeLayout>
+
+
+</FrameLayout>

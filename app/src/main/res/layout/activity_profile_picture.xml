@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".SignUpScreen.ProfilePicture">
+
+
+    <!-- Profile Picture ImageView -->
+
+    <!-- Floating Action Button (Camera) -->
+
+    <TextView
+        android:id="@+id/profiletxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/inter_bold"
+        android:text="Add Profile Picture"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageViewProfile"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        app:shapeAppearanceOverlay="@style/circular"
+        android:layout_below="@+id/profiletxt"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/defaultpfp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/upload"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonNext"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:background="@drawable/corner"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profilecard" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/upload"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imageViewProfile"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp" >
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/uploadbutton"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:background="@drawable/corner"
+            android:text="Upload"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/buttonNext"
+            app:layout_constraintStart_toEndOf="@+id/buttonNext" />
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/imagefloatingbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imageViewProfile"
+        android:layout_alignBottom="@+id/imageViewProfile"
+        android:layout_marginTop="290dp"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="@color/darkblue"
+        android:clickable="true"
+        android:elevation="12dp"
+        android:focusable="true"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.Circular"
+        app:srcCompat="@drawable/outline_camera_alt_24"
+        app:tint="@color/white" />
+
+
+    <!-- Upload Button -->
+
+    <!-- Next Button -->
+
+
+</RelativeLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/geosavelogo"
+        android:label="GeoSave"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GeoSaveApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".StartingScreens.BoardingScreen2"
+            android:exported="false" />
+        <activity
+            android:name=".StartingScreens.BoardingScreen"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AdminChangePassword"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.ViewAllShopDeals"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.ViewAllUsers"
+            android:exported="false" />
+        <activity
+            android:name=".BlockRecyclerView"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.BlockUserPage"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AdminScreen"
+            android:exported="false" />
+        <activity
+            android:name=".PrivacyPolicy"
+            android:exported="false" />
+        <activity
+            android:name=".ShopperProfilePicture"
+            android:exported="false" />
+        <activity
+            android:name=".DeleteAccount"
+            android:exported="false" />
+        <activity
+            android:name=".StoreScreen.AboutAccount"
+            android:exported="false" />
+        <activity
+            android:name=".StoreScreen.PersonalDetails"
+            android:exported="false" />
+        <activity
+            android:name=".LoginScreen.ForgotPassword"
+            android:exported="false" />
+        <activity
+            android:name=".UtilityScreens.ChangePassword"
+            android:exported="false" />
+        <activity
+            android:name=".UtilityScreens.Settings"
+            android:exported="false" />
+        <activity
+            android:name=".UtilityScreens.EditProfile"
+            android:exported="false" />
+
+        <receiver
+            android:name=".Geofence.GeofenceBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.location.Geofence" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDGmg_iSFbZeFR7WSF7orouGC1xzXjMZ0U" />
+        <!--
+     Set custom default icon. This is used when no icon is set for incoming notification messages.
+     See README(https://goo.gl/l4GJaQ) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/baseline_circle_notifications_24" />
+        <!--
+ Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/darkblue" /> <!-- <receiver android:name=".GeofenceBroadcastReceiver"/> -->
+        <activity
+            android:name=".UtilityScreens.Sidebar"
+            android:exported="false" />
+        <activity
+            android:name=".ShopperViewStoreDeals"
+            android:exported="false" />
+        <activity
+            android:name=".StoreScreen.ViewStoreLocation"
+            android:exported="false"
+            android:label="@string/title_activity_view_store_location"
+            android:theme="@style/Theme.GeoSaveApp" />
+        <activity
+            android:name=".Components.NewDealCard"
+            android:exported="false" />
+        <activity
+            android:name=".SignUpScreen.ProfilePicture"
+            android:exported="false" />
+        <activity
+            android:name=".ShopperScreen.Shoppercreateprofile"
+            android:exported="false" />
+        <activity
+            android:name=".StoreScreen.StoreCreateProfile"
+            android:exported="false" /> <!-- <meta-data -->
+        <!-- android:name="com.google.android.geo.API_KEY" -->
+        <!-- android:value="AIzaSyCGwxdKsgKntLKDj4-QHUFqdSIdwTMGmzQ" /> -->
+        <activity
+            android:name=".ShopperScreen.ShopperHomepage"
+            android:exported="false" />
+        <activity
+            android:name=".StoreScreen.StoreHomePage"
+            android:exported="false" />
+        <activity
+            android:name=".LoginScreen.LoginPage"
+            android:exported="false" />
+        <activity
+            android:name=".SignupShopper"
+            android:exported="false" />
+        <activity
+            android:name=".SignUpScreen.SignupStore"
+            android:exported="false" />
+        <activity
+            android:name=".SignUpScreen.OptionsPage"
+            android:exported="false" />
+        <activity
+            android:name=".StartingScreens.GetStarted"
+            android:exported="false" />
+        <activity
+            android:name=".StartingScreens.SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".CloudMessaging"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".Geofence.NotificationService"
+            android:exported="false" />
+    </application>
+
+</manifest>
